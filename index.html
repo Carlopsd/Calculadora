@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,1,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+
+</head>
+<body>
+    <section>
+        <div class="screen">
+            <div class="screen-last">
+                <input type="text" id="last" disabled="disabled">
+                <input type="text" id="operator" disabled="disebled">
+            </div>
+            <div class="screen-input">
+                <input type="number" id="input" name="input" value="0">
+                <input type="text" id="result" disabled="disabled" >
+            </div>
+        </div>
+        
+
+        <div class="grid">
+            <p onclick="ac()">AC</p>
+            <p onclick="remainder()">//</p>
+            <p id="erase" onclick="erase()"><span class="material-symbols-outlined">
+                backspace
+            </span></p>
+
+            <p onclick="potency()">x^</p>
+            <p onclick="square()"><sup>2</sup><span>&#8730;</span></p>
+            <p onclick="division()"><span>&#247;</span></p>
+            <p onclick="multiplication()"><span>&#215;</span></p>
+
+            <p id="seven" onclick="numbers(id)">7</p>
+            <p id="eight" onclick="numbers(id)">8</p>
+            <p id="nine" onclick="numbers(id)">9</p>
+            <p onclick="subtraction()">-</p>
+
+            <p id="four" onclick="numbers(id)">4</p>
+            <p id="five" onclick="numbers(id)">5</p>
+            <p id="six" onclick="numbers(id)">6</p>
+            <p onclick="sum()">+</p>
+
+            <p id="one" onclick="numbers(id)">1</p>
+            <p id="two" onclick="numbers(id)">2</p>
+            <p id="three" onclick="numbers(id)">3</p>
+            <p id="equals" onclick="equalsTo()">=</p>
+
+            <p id="cero" onclick="cero()">0</p>
+            <p onclick="dot()">.</p>
+        </div>
+    </section>
+</body>
+<script src="funciones.js"></script>
+</html>
